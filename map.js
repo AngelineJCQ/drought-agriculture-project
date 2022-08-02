@@ -276,6 +276,54 @@ map.on("load", function () {
     },
     "waterway-label"
   );
+  map.addLayer(
+    {
+      id: "fresno",
+      type: "line",
+      source: {
+        type: "geojson",
+        data: "data/fresno.geojson",
+      },
+      paint: {
+        "line-color": "#ffffff",
+        "line-width": 2,
+        "line-opacity": 0,
+      },
+    },
+    "waterway-label"
+  );
+  map.addLayer(
+    {
+      id: "sell-farm-fill",
+      type: "fill",
+      source: {
+        type: "geojson",
+        data: "data/sell-farm.geojson",
+      },
+      paint: {
+        "fill-color": "#a3b18a",
+        "fill-outline-color": "#3a5a40",
+        "fill-opacity":0,
+      },
+    },
+    "waterway-label"
+  );
+  map.addLayer(
+    {
+      id: "sell-farm-outline",
+      type: "line",
+      source: {
+        type: "geojson",
+        data: "data/sell-farm.geojson",
+      },
+      paint: {
+        "line-color": "#3a5a40",
+        "line-width": 1,
+        "line-opacity":0,
+      },
+    },
+    "waterway-label"
+  );
 
   // Setup the instance, pass callback functions
   scroller

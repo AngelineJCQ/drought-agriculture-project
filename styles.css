@@ -85,6 +85,20 @@ body {
     max-width: 600px;
 }
 
+#actualText p {
+  max-width:600px; 
+  margin-left:auto; 
+  margin-right:auto
+}
+
+
+#actualText2 p {
+  max-width:600px; 
+  margin-left:auto; 
+  margin-right:auto
+}
+
+
 #header p.byline {
     font-weight: 400;
     font-size: 0.9em;
@@ -171,7 +185,8 @@ a, a:hover, a:visited {
   font-size: 13px;
 }
 .step img {
-  width: 100%;
+  width: 750px;
+  margin: 20px auto;
 }
 @media (max-width: 750px) {
   .centered, .lefty, .righty, .fully {
