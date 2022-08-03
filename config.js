@@ -6,8 +6,8 @@ let titleDiv =
 let bylineDiv = "<p class='byline'>By AREENA ARORA, KUNLE FALAYI and CHUQIN JIANG</p>";
 
 let descriptionDiv =
-  "<p style=margin-top:50px>Amid a historic drought parching much of America's west, Fresno, the country’s most agriculturally productive county is especially hard-hit.</p>" +
-  '<p>The county is located in one of America’s driest regions. Farms in these regions are forced to find innovative solutions to provide irrigation as dryer climate limits the amount of available water.</p>' +
+  "<p style=margin-top:50px>Amid a historic drought parching much of America's west, Fresno, the country’s <a href='https://www.co.fresno.ca.us/Home/Components/News/News/897/1557'>most agriculturally productive county</a> is especially hard-hit.</p>" +
+  '<p>The county is located in one of America’s driest regions. Farms in this region are forced to find innovative solutions to provide irrigation as dryer climate limits the amount of available water.</p>' +
   '<p style="text-align:center;margin-top:100px">Scroll to see the map<br>▼</p>';
 
 let footerDiv =
@@ -18,10 +18,10 @@ let divChapter1 =
   "<p>The entire country is experiencing hotter and dryer summer.</p>";
 
 let divChapter2 =
-  "<p>This is the drought map on July 19, 2000.</p>";
+  "<p>This is the drought map on July 19, 2000. Notice the highest level of droughts was concentrated in the country's south-east.</p>";
 
 let divChapter3 =
-  "<p>This is the drought map on the same date 22 years later.</p>";
+  "<p>This is the drought map on the same date 22 years later where the drought pattern has shifted almost entirely to the west, especially California.</p>";
 
 let divChapter4 =
   "<p>Scientists say western U.S. is in the midst of the <a href='https://www.latimes.com/environment/story/2022-02-14/western-megadrought-driest-in-1200-years'>driest 22-year period</a> in at least 1,200 years.</p>";
@@ -40,8 +40,7 @@ let divChapter6 =
   "<p>“The drought, insect spray, growth spray, and other issues have made agriculture too expensive to continue,” he said.</p>";
 
   let divChapter8 =
-  "<p>Costa is not the only farmer who's <span style='background-color:#a3b18a;color:white'>selling the land</span>.</p>" +
-  "<p>All around the Fresno, small farm owners are facing similar difficulites as the result of increasing droughts.";
+  "<p>All <span style='background-color:#a3b18a;color:white'>these farms </span> have been put up for sale.";
 
   let divChapter9 =
   "<p>Fresno has often been ranked highest for its production value despite some key factors indicating otherwise. For instance, in the last two decades, rainfall levels— a key factor for irrigation— has been dropping constantly. </p>" +
@@ -353,8 +352,8 @@ var config = {
       description: "",
       chapterDiv: divChapter8,
       location: {
-        center: [-119.91, 36.635],
-        zoom: 11.5,
+        center: [-119.85, 36.657],
+        zoom: 12,
         zoomSmall: 13,
         pitch: 40,
         bearing: -7,
