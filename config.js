@@ -40,6 +40,10 @@ let divChapter6 =
   "<p>“The drought, insect spray, growth spray, and other issues have made agriculture too expensive to continue,” he said.</p>";
 
   let divChapter8 =
+  "<p>Danny Merkley, director of water resources with the California Farm Bureau Federation blames both natural and human-made factors for the drought.</p>" +
+  "<p>“We have a drought because of mother nature, but also a regulatory drought caused by the state and federal governments’ lack of commitment to taking action,” he said.</p>" +
+  "<p>Merkley is a fourth-generation farmer and has seen many of his friends and neighbors’ farms go out of business over the years. </p>" +
+  "<p>“Those that have stayed in the business have had to grow bigger,” he said. “Survival is very difficult for small-scale farmers now.”</p>" +
   "<p>All <span style='background-color:#a3b18a;color:white'>these farms </span> have been put up for sale.";
 
   let divChapter9 =
@@ -48,7 +52,8 @@ let divChapter6 =
   "<p>California has also dealt with raging wildfires and heatwaves. How then are farmers sustaining the business and what is the future of farming in Fresno?</p>" +
   "<p>Even with warmer and drier summers, data shows the level of irrigation has gone down in the county.</p>" +
   "<p><img src='images/irrigation.svg'></p>" +
-  "<p>To cope with the lack of rainfall, many farmers in Fresno adopt drip irrigation systems, according to Costa. </p>" +
+  "<p>“You can only grow commodities with the water you have,” Merkley said. “Rainfall is like our checking account. When that turns dry, we turn to our savings account meaning groundwater … The state has cleared up both for us,” he said pointing to lack of proper water management policies.</p>" +
+  "<p>To stay afloat, farmers have found unique solutions. To cope with the lack of rainfall, many farmers in Fresno adopt drip irrigation systems, according to Costa. </p>" +
   "<p>“For months we don’t use irrigation water and depend on the aquifer to draw water,” he said. “That requires using pumps which consume a lot of electricity. It is quite expensive for us.”</p>" +
   "<p>Another solution is to fallow land, according to Jeanine Jones, interstate resources manager for the California Department of Water Resources. </p>" +
   "<p>Fallowing means to let plowed land be left unsown for some time to allow it to regain its fertility. </p>" +
@@ -71,6 +76,7 @@ let divChapter6 =
   "<p>He added that even as food prices seem to have gone up, a bigger share of the increase is going to middlemen, instead of farmers.</p>" +
   "<p>“Almonds used to be $4 a pound. Now farmers get only $1 a pound,” he said.</p>" +
   "<p>What then is the solution?</p>" +
+  "<p>One thing to work on is to build more storage, Merkley said. “With the growing conditions we have in California, agriculture isn’t going anywhere, but we need to act fast.</p>" +
   "<p>“I do not think we’re doomed,” Tomich said. “But we do need to be climate-smart. I don’t think any agriculture on the planet is sustainable right now.”</p>" +
   "<p>His recommendation would be to intervene in the industry through the energy sector. </p>" +
   "<p>“We need to move away from fossil fuels. Agriculture isn’t an easy fix, but not impossible,” he said. “California’s agriculture is very good at reinventing itself.”</p>" 
