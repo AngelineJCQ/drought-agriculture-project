@@ -11,7 +11,7 @@ let descriptionDiv =
   '<p style="text-align:center;margin-top:100px">Scroll to see the map<br>▼</p>';
 
 let footerDiv =
-  '<p>This story is based on data by the <a href="https://droughtmonitor.unl.edu/DmData/GISData.aspx">US Drought Monitor</a> and tutorial by <a href="https://pointsunknown.nyc/">Points Unknown</a></p>' +
+  '<p>This base map is based on data by the <a href="https://droughtmonitor.unl.edu/DmData/GISData.aspx">US Drought Monitor</a>, <a href="https://www.co.fresno.ca.us/departments/public-works-planning/divisions-of-public-works-and-planning/cds/gis-shapefiles">Fresno Parcel</a>, <a href="https://data.ca.gov/dataset/ca-geographic-boundaries">CA Open Data</a> and tutorial by <a href="https://pointsunknown.nyc/">Points Unknown</a>. The notebook for cleaning the geo data can be found <a href="https://github.com/AngelineJCQ/drought-agriculture-project/blob/main/data/data-clean.ipynb">here</a>.</p>' +
   '<p><a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> | <a href="http://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a> | <a href="https://brown.columbia.edu">The Brown Institute for Media Innovation</a></p>';
 
 let divChapter1 =
@@ -48,10 +48,16 @@ let divChapter6 =
 
   let divChapter9 =
   "<p>Fresno has often been ranked highest for its production value despite some key factors indicating otherwise. For instance, in the last two decades, rainfall levels— a key factor for irrigation— has been dropping constantly. </p>" +
+  "<p class='chart-title'>Amount of rainfall has fallen in California since 2000.</p>" +
+  "<p class='sub-title'>Most years of this century witnessed the rainfull below the normal.</p>" +
   "<p><img src='images/rainfall.svg'></p>" +
+  "<p class='data-source'>Data Source: <a href='http://www.laalmanac.com/weather/we13.php'>Los Angeles Almanac</a></p>" +
   "<p>California has also dealt with raging wildfires and heatwaves. How then are farmers sustaining the business and what is the future of farming in Fresno?</p>" +
   "<p>Even with warmer and drier summers, data shows the level of irrigation has gone down in the county.</p>" +
+  "<p class='chart-title'> More irrigation water is needed per acre farmland in Fresno.</p>" +
+  "<p class='sub-title'> The total acres of irrigated lands dropped 60% after 2000, while water usage decreased at a much slower pace since 2005.</p>" +
   "<p><img src='images/irrigation.svg'></p>" +
+  "<p class='data-source'>Data Source: <a href='https://waterdata.usgs.gov/nwis/water_use/'>USGS Water Use Data</a></p>" +
   "<p>“You can only grow commodities with the water you have,” Merkley said. “Rainfall is like our checking account. When that turns dry, we turn to our savings account meaning groundwater … The state has cleared up both for us,” he said pointing to lack of proper water management policies.</p>" +
   "<p>To stay afloat, farmers have found unique solutions. To cope with the lack of rainfall, many farmers in Fresno adopt drip irrigation systems, according to Costa. </p>" +
   "<p>“For months we don’t use irrigation water and depend on the aquifer to draw water,” he said. “That requires using pumps which consume a lot of electricity. It is quite expensive for us.”</p>" +
@@ -66,11 +72,15 @@ let divChapter6 =
   "<p>Jones said switching crops is a trend that’s already happened.</p>" +
   "<p>“Because you know, farmers basically follow the markets,” he said. “At the San Joaquin Valley in 1980, or 1990, there were a lot of annual crops such as cotton because the market for cotton was good and they had ample water supplies for it. But as water supplies were reduced and water became more expensive, it was no longer profitable for growers to produce cotton.” </p>" +
   "<p>A majority of farmers subsequently switched to farming almonds, he added.</p>" +
+  "<p class='chart-title'> Almonds and grapes dominate Fresno County agriculture production for 5 years</p>" +
   "<p><img src='images/crop-type.svg'></p>" +
+  "<p class='data-source'>Data Source: <a href='https://www.co.fresno.ca.us/departments/agricultural-commissioner/fresno-county-crop-report-dmi'>Fresno County Crop Report</a></p>" +
   "<p>“For some commodities, California produces virtually all of U.S.’ production,” Tomich said. “For general categories, fruits and vegetables California produces half of what the US eats.” </p>" +
   "<p>That said, California’s agriculture being hit won’t necessarily impact food security in the country, Tomich is confident.</p>" +
   "<p>“If Americans started eating the diet that’s recommended by the U.S. goverment, we’d need 5 Californias. But, that’s not the case,” he said. “Nobody will starve because they couldn’t get a tomato or peach.”</p>" +
-  "<p><<img src='images/agric_states.png'></p>" +
+  "<p class='chart-title'> California is the largest agriculture-producing state receiving the most crop cash in 2020</p>" +
+  "<p><img src='images/agric_states.svg'></p>" +
+  "<p class='data-source'>Data Source: <a href='https://www.cdfa.ca.gov/exec/county/CountyCropReports.html'>California Agriculture Stats</a></p>" +
   "<p>Climate change aside, farmers also face other challenges.</p>" +
   "<p>“We are probably the only industry and producers that cannot set their own price,” Costa said. “We don’t get to set the prices we sell for. So we are unable to recoup as much of our expenses as we would.”</p>" +
   "<p>He added that even as food prices seem to have gone up, a bigger share of the increase is going to middlemen, instead of farmers.</p>" +
@@ -79,28 +89,8 @@ let divChapter6 =
   "<p>One thing to work on is to build more storage, Merkley said. “With the growing conditions we have in California, agriculture isn’t going anywhere, but we need to act fast.</p>" +
   "<p>“I do not think we’re doomed,” Tomich said. “But we do need to be climate-smart. I don’t think any agriculture on the planet is sustainable right now.”</p>" +
   "<p>His recommendation would be to intervene in the industry through the energy sector. </p>" +
-  "<p>“We need to move away from fossil fuels. Agriculture isn’t an easy fix, but not impossible,” he said. “California’s agriculture is very good at reinventing itself.”</p>" 
+  "<p style='margin-bottom:100px'>“We need to move away from fossil fuels. Agriculture isn’t an easy fix, but not impossible,” he said. “California’s agriculture is very good at reinventing itself.”</p>" 
 
-
-
-/*
-let divChapter4 =
-  "<h3 style='max-width:600px; margin-left:auto; margin-right:auto'>Overall collapse of subway usage</h3>" +
-  '<div style="max-width:1200px; margin-left:auto; margin-right:auto"><img src="images/WeekdaySubway.svg"></div>' +
-  "<p class='imageCredit' style='max-width:600px; margin-left:auto; margin-right:auto'><a href='https://qri.cloud/nyc-transit-data/turnstile_daily_counts_2020'>NYC Subway Turnstile Counts - 2020 (Qri)</a></p>" +
-  "<p style='max-width:600px; margin-left:auto; margin-right:auto'>As can be seen in the chart above, subway usage collapsed abruptly right after the first COVID-19 case was documented in the city. It was in fact the declaration of a state of emergency, on March 7, 2020, that precipitated this near total drop in subway ridership.</p>" +
-  "<p style='max-width:600px; margin-left:auto; margin-right:auto'>After a few weeks of the declaration of state of emergency, subway usage in the city reached its lowest point, almost 90% less than the same time period the year before. Since then, the number of people that use the subway has remained drastically low. Even after the city began its re-opening scheme on June 8, 2020, subway usage was still more than 70% below 2019 levels.</p>" +
-  '<div style="max-width:600px; margin-left:auto; margin-right:auto"><iframe title="vimeo-player" src="https://player.vimeo.com/video/529512696" width="600" height="277.5" frameborder="0" allowfullscreen></iframe></div>' +
-  "<p style='max-width:600px; margin-left:auto; margin-right:auto'>This difference, however, varies across the city, with some parts of it seeing a much steeper decline and others witnessing a stronger recovery. Nevertheless, even a year after the pandemic first hit New York City, the number of daily subway commuters remains below 2019 levels.</p>" +
-  "<p style='max-width:600px; margin-left:auto; margin-right:auto'>That being said, other transportation networks have fared differently. For example, after a similar decline right after the state of emergency was declared, Citibike has seen its number of users reach and even surpass 2019 levels. City buses, on the other hand, also remain underutilized compared to their usage pre-pandemic.</p>";
-
-let divChapter5 =
-  "<h3>The South Bronx, as Always</h3>" +
-  '<img src="images/Chapter_4_Image.jpg">' +
-  '<p class="imageCredit"><a href="https://www.nytimes.com/2020/04/09/nyregion/coronavirus-queens-corona-jackson-heights-elmhurst.html">The New York Times</a></p>' +
-  "<p>The South Bronx, perennially marred in social injustice, has also been hard hit during the current COVID-19 outbreak. The area's three main neighborhoods, Mott Haven, Melrose and Port Morris are mostly home to low-income families that have been forced to continue going to work, risking their health and that of their loved ones. Similarly to Jackson Heights in Queens, the areas subway stations have seen a smaller decrease in use than the rest of the city. Median household income in this area oscillates between $15,000 and $30,000.</p>";
-
-*/
 
 var config = {
   style: "mapbox://styles/angelinejcq/cl5ie5q1e000a14ny0jtphka7",
@@ -358,10 +348,10 @@ var config = {
       description: "",
       chapterDiv: divChapter8,
       location: {
-        center: [-119.85, 36.657],
-        zoom: 12,
-        zoomSmall: 13,
-        pitch: 40,
+        center: [-119.85, 36.63],
+        zoom: 11.25,
+        zoomSmall: 13.5,
+        pitch: 45,
         bearing: -7,
       },
       mapAnimation: "flyTo",
